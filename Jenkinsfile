@@ -1,5 +1,9 @@
 pipeline {
     agent any
+        tools {
+        maven 'Maven 3.x' // Use the correct Maven name
+    }
+
     stages {
         stage('Checkout') {
             steps {
